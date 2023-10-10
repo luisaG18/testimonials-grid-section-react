@@ -1,0 +1,40 @@
+.container-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  border-radius: 15px;
+  color: hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-position: right 25px top 0;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 15px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    span:last-child {
+      color: hsl(0, 0%, 100%, 0.5);
+    }
+  }
+  img {
+    border-radius: 50%;
+    width: 35px;
+    border: 3px solid hsl(0, 0%, 100%, 0.5);
+  }
+}
+
+.card-title {
+  font-size: 25px;
+}
+
+.card-text {
+  color: hsl(0, 0%, 100%, 0.5);
+}
