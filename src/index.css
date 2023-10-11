@@ -4,7 +4,20 @@
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+#root {
+  height: 100vh;
+}
+
 body {
   margin: 0;
   font-size: 13px;
+  height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  #root {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 }

@@ -8,10 +8,17 @@ import ImagePatrick from "../../assets/images/image-patrick.jpg";
 import ImageKira from "../../assets/images/image-kira.jpg";
 
 function Home() {
+  /* const list = [
+    {
+      name: "Daniel Clifford",
+    }, 
+  ]; */
+
   return (
     <>
       <div className="container">
         <Card
+          classCard="card1"
           image={ImageDaniel}
           name="Daniel Clifford"
           verification="Verified Graduate"
@@ -21,6 +28,7 @@ function Home() {
           backgroundImage={bgPattern}
         />
         <Card
+          classCard="card2"
           image={ImageJonathan}
           name="Jonathan Walters"
           verification="Verified Graduate"
@@ -29,6 +37,7 @@ function Home() {
           background={"hsl(217, 19%, 35%)"}
         />
         <Card
+          classCard="card3"
           image={ImageJeanette}
           name="Jeanette Harmon"
           verification="Verified Graduate"
@@ -39,6 +48,7 @@ function Home() {
           colorTextOpacity={"hsl(217, 19%, 35%, 0.7)"}
         />
         <Card
+          classCard="card4"
           image={ImagePatrick}
           name="Patrick Abrams"
           verification="Verified Graduate"
@@ -47,6 +57,7 @@ function Home() {
           background={"hsl(219, 29%, 14%)"}
         />
         <Card
+          classCard="card5"
           image={ImageKira}
           name="Kira Whittle"
           verification="Verified Graduate"

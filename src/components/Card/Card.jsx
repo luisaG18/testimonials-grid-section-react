@@ -3,6 +3,7 @@ import "./Card.scss";
 
 // eslint-disable-next-line react/prop-types
 function Card({
+  classCard,
   image,
   name,
   verification,
@@ -16,7 +17,7 @@ function Card({
   return (
     <>
       <div
-        className="container-card"
+        className={`container-card ${classCard}`}
         style={{
           backgroundColor: background,
           backgroundImage: `url(${backgroundImage})`,
