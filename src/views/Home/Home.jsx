@@ -10,7 +10,6 @@ import ImageKira from "../../assets/images/image-kira.jpg";
 function Home() {
   const list = [
     {
-      id: 1,
       classCard: "card1",
       image: ImageDaniel,
       name: "Daniel Clifford",
@@ -22,7 +21,6 @@ function Home() {
       backgroundImage: bgPattern,
     },
     {
-      id: 2,
       classCard: "card2",
       image: ImageJonathan,
       name: "Jonathan Walters",
@@ -32,7 +30,6 @@ function Home() {
       background: "hsl(217, 19%, 35%)",
     },
     {
-      id: 3,
       classCard: "card3",
       image: ImageJeanette,
       name: "Jeanette Harmon",
@@ -44,7 +41,6 @@ function Home() {
       colorTextOpacity: "hsl(217, 19%, 35%, 0.7)",
     },
     {
-      id: 4,
       classCard: "card4",
       image: ImagePatrick,
       name: "Patrick Abrams",
@@ -55,7 +51,6 @@ function Home() {
       background: "hsl(219, 29%, 14%)",
     },
     {
-      id: 5,
       classCard: "card5",
       image: ImageKira,
       name: "Kira Whittle",
@@ -71,9 +66,9 @@ function Home() {
   return (
     <>
       <div className="container">
-        {list.map((person) => (
+        {list.map((person, index) => (
           <Card
-            key={person.id}
+            key={index}
             classCard={person.classCard}
             image={person.image}
             name={person.name}
